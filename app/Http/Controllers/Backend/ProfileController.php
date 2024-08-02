@@ -1,4 +1,4 @@
-<?php declare(strict_types=1); 
+<?php declare(strict_types=1);
 
 namespace App\Http\Controllers\Backend;
 use Illuminate\Support\Facades\Hash;
@@ -42,7 +42,7 @@ function update(Request $request){
     ]);
     return back()->with('success','Data update successful');
   }
-}
+
 function passwordview(){
    return view('backend.profile.passview');
 }
@@ -65,3 +65,5 @@ function passwordupdate(Request $request){
              return back()->with('success','Password Confirm Password updated successfully');
         }
 }
+}
+
